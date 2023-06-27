@@ -1,0 +1,644 @@
+body {
+    margin: 0 auto;
+    padding:0;
+    background-color: lightgrey;
+  }
+  .wrapper {
+    background-color: white;
+    padding: 30px 70px;
+  }
+  
+  ul {
+    text-align: center;
+  }
+  /* #content {
+    overflow: auto;
+  } */
+  
+  .column1, .column2, .column3 {
+    width: 31.3%;
+    float: left;
+  }
+  
+  .column1 {
+    float: left;
+  }
+  .column2 {
+    margin: 0% 3%;
+  }
+  .column3 {
+    float: right;
+    margin: 0%;
+  }
+  
+  
+  li {
+    display: inline;
+    padding: 0.5em;
+  }
+  
+  .banner, .article {
+    background-color: #C1DCDC;
+    height: 29em;
+    margin-top: 30px;
+    margin-bottom: 1em;
+    border-radius: 24px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Header nav */
+  .logo{
+    font-size: 24px;
+    font-family: 'Aclonica';
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+.nav_page a {
+    font-family: 'Poppins';
+    font-style: normal;
+    text-decoration: none;
+    color: lightgray;
+    font-size: 18px;
+}
+
+.nav_page a:hover{
+    color: black;
+}
+
+/* Header icon phải */
+.top-icon{
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-icon .img_cart{
+    width: 18px;
+    height: 18px;
+}
+
+.top-icon .vertical_bar{
+    font-size: 25px;
+    padding: 0;
+    margin: 0 15px;
+}
+
+.top-icon button{
+    background: #ffffff;
+    border: #ffffff;
+}
+
+/* banner */
+.banner .banner_container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* banner left */
+
+/*/* name banner */
+.banner_container .banner_container_left{
+    /* position: absolute; */
+    display: flex;
+    float: left;
+    width: 35%;
+    height: 100%;
+}
+
+.article_banner{
+    width: 100%;
+    height: 96.5%;
+    margin-top: 16px;
+    margin-left: 60px;
+}
+
+.name_banner{
+    display: flex;
+    flex-direction: column;
+    font-size: 34px;
+}
+
+.article_banner h1{
+    margin: 0;
+}
+
+/*/* info banner */
+
+.info_banner{
+    display: flex;  
+    margin-top: 20px;
+    height: 18%;
+}
+
+.info_banner .info_banner_left{
+    float: left;
+    width: 100%;
+    height: 80%;
+    border-right: 1px solid green;
+    border-width: 3px;
+    font-size: 25px;
+}
+
+.info_banner .info_banner_left h3,p{
+    margin: 0;
+}
+
+.info_banner .info_banner_right{
+    float: right;
+    width: 100%;
+    height: 80%;
+    font-size: 25px;
+    margin-left: 80px;
+}
+
+.info_banner .info_banner_right h3,p{
+    margin: 0;
+}
+
+/* /* look banner */
+.look_banner{
+    position: relative;
+    display: flex;
+    width: 79%;
+    height: 15%;
+    margin-top: 20px;
+}
+
+.look_banner .banner_look{
+    border-radius: 10px;
+    width: 530px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.look_banner .img_look{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top:20%;
+    left: 89%;
+    background-color: #C1DCDC;
+    padding: 10px;
+    border-radius: 12px;
+    margin-right: 0;
+    /* transform: translate(244%, -50%); */
+}
+
+/* banner container right */
+.banner .banner_container_right{
+    display: flex;
+    float: right;
+    width: 55%;
+    height: 100%;
+}
+
+
+.banner_container_right img{
+    position: absolute;
+    
+}
+
+.banner_container_right .font_black{
+    display: flex;
+    width: 65%;
+    height: 100%;
+}
+
+/* banner2 */
+.banner2 {
+    height: 69em;
+    margin-bottom: 1em;
+    margin-top: 90px;
+}
+
+.banner2 .banner2-section_1{  
+    width: 100%;
+    height: 100%;
+}
+
+.banner2-section_1 .banner2-section_1_left{
+    float: left;
+    width: 18%;
+    height: 100%;
+}
+
+.info_section_1{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner2-section_1_left h2{
+    font-size: 35px;
+    margin: 0;
+}
+
+.banner2-section_1_left p{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.section1_more{
+    display: flex;
+    padding: 10px;
+    width: 55%;
+    height: 10%;
+    background-color: #C1DCDC;
+}
+
+.info_section_1 button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+button.section1_more::after{
+    content: "";
+    display: inline-block;
+    background-image: url(/Week_1/CSS/BT_4_big/vuongfarm/image/arrow.svg);
+    width: 23px;
+    height: 12px;
+    background-repeat: no-repeat;
+}
+
+/* /* banner2 right */
+.banner2-section_1_right{
+    float: right;
+    width: 82%;
+}
+
+
+.banner2_plant1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* justify-content: space-between; */
+    row-gap: 37px;
+    column-gap: 20px;
+}
+
+.banner2_plant1 img{
+    width: 100%;
+}
+
+/* banner3 */
+.banner-3-aboutus{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 24em;
+    margin-top: 30px;
+}
+
+.banner-3-name{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+}
+
+.banner-3-name-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.banner-3-name-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    font-size: 40px;
+    color: lightslategray;
+}
+
+/* banner-3-info */
+.banner-3-info{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.banner-3-info-img{
+    width: 20%;
+    height: 100%;
+}
+
+.banner-3-image1{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    background-color: #C1DCDC;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.banner-3-image1 img{
+    margin: 42px 0;
+}
+
+.banner3-text{
+    margin-top: 5px;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.banner3-text2{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 20px;
+    color: lightslategray;
+}
+
+/* banner4 */
+.banner4-category{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 62px;
+}
+
+
+
+.banner4-name1{
+    text-align: center;
+    height: 50%;
+    font-size: 40px;
+    font-weight: bold;
+}
+.banner4-name2{
+    text-align: center;
+    height: 50%;
+    font-size: 35px;
+    /* font-weight: bold; */
+    color: lightslategray;
+}
+
+
+.banner4-img{
+    height: 100%;
+    background-color: #C1DCDC;
+    margin-top: 70px;
+    margin-left: -70px;
+    margin-right: -70px;
+}
+
+.banner4-img-all{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 53%;
+    padding-top: 50px;
+}
+
+.banner4-category .banner4-img-all img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner4-img1{
+    transform: translate(0%, -25%);
+}
+
+.banner4-img2{
+    width: 397.312px;
+}
+
+.banner4-img3{
+    transform: translate(0%, -25%);
+}
+
+.banner4-img-all .text-img{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+} 
+
+.banner4-img-all .text-img2{
+    text-align: center;
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: lightslategray;
+} 
+
+.banner4-category .banner4-info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5%;
+    margin: 100px auto;
+}
+
+.banner4-info button{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 8%;
+    height: 100%;
+    border-color: #ffffff;
+}
+
+.banner4-info button::after{
+    content: "";
+    width: 22px;
+    height: 12px;
+    background-image: url(/Week_1/CSS/BT_4_big/vuongfarm/image/banner4_arrow.svg);
+    background-repeat: no-repeat;
+    margin-top: 4px;
+}
+
+.banner5{
+    /* width: 100; */
+    height: 36em;
+    /* background-color: aqua; */
+    /* margin-top: 50px; */
+}
+
+.banner5_name{
+    display: flex;
+    width: 25%;
+    height: 10%;
+    font-size: 35px;
+    font-weight: bold;
+    padding:70px 0;
+}
+
+.banner5-info{
+    display: flex;
+    width: 100%;
+    height: 58%;
+    overflow-x: auto;
+}
+
+.banner5-flex-scroll{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.banner5-info-img{
+    /* position: relative; */
+    display: inline-block;
+    width: 1000px;
+    height: 100%;
+    background-color: #C1DCDC;
+    margin-right: 30px;
+}
+
+.banner5-info-img-info{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 0px 30px;
+    height: 91%;
+    font-size: 25px;
+}
+
+.banner5-info-img_info-inside{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.banner5-info-img_info-inside .banner-5-img-inside{
+    transform: translate(-35px, -6px);
+    width: 21%;
+}
+
+.banner-5-img-inside img{
+    height: 210px;
+}
+
+.banner5-info-img_info-inside .banner-5-img-status{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+
+.banner-5-img-status .banner-5-img-status-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-5-img-status-name .text1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.banner-5-img-status-name .text2{
+    font-size: 20px;
+    color: lightslategray;
+}
+
+.banner-5-img-status .banner-5-img-status-evaluate{
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.banner-5-img-status-evaluate img{
+    height: 27px;
+    margin-right: 20px;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    height: 29em;
+    background-color: #C1DCDC;
+    margin: 0px -70px;
+    margin-bottom: -30px;
+}
+
+.footer .footer-info{
+    position: relative;
+    height: 87%;
+    width: 88%;
+    padding: 30px 70px;
+
+}
+
+.footer-info-left{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 50%;
+}
+
+.footer-info-left .info-left-1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-info-left .info-left-2{
+    width: 35%;
+    color: lightslategray;
+    font-size: 25px;
+    padding: 30px 0px;
+}
+
+.footer-info-left .info-left-img{
+    display: flex;
+    
+}
+
+.footer-info-left .info-left-img img{
+   margin-right: 20px;
+}
+
+.footer-info-left .info-left-bottom{
+    position: absolute;
+    bottom: 11px;
+    color: lightslategray;
+    font-size: 25px;
+}
+
+/* footer-info-right */
+.footer-info-right {
+    float: right;
+    /* width: 50%; */
+}
+
+table{
+    font-size: 30px;
+}
+
+th{
+    text-align: left;
+    padding: 20px 25px 20px 0px;
+}
+
+td{
+    padding: 20px 25px 20px 0px;
+    color: lightslategray;
+}

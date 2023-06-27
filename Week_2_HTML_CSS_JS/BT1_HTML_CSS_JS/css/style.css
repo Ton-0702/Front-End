@@ -1,0 +1,484 @@
+/* username: 'kminchelle',
+    password: '0lelplR', */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page_kits{
+    display: flex;
+    width: 100%;
+    height: 968px;
+    min-height: 800px;
+    min-width: 1700px;
+}
+
+.side_bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 9vw;
+    /* height: 100%; */
+    background-color: rgb(245, 170, 143);
+}
+
+.list_img_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list_img {
+    margin-top: 20px;
+}
+
+.list_img_top li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+.background_setting{
+    padding: 10px;
+    background-color: #FF7008;
+    border-radius: 50%;
+}
+
+.setting {
+    width: 20vw;
+    height: 100%;
+    min-height: 800px;
+    border-right: 1px solid gray;
+}
+
+.setting .setting_back{
+    display: flex;
+    margin-top: 38px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.setting .setting_back .font_setting{
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.setting .setting_list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.setting .setting_list .setting_list-page{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.setting_list .setting_list-page .setting_list-page-ul{
+    margin-top: 66px;
+}
+
+.setting_list .setting_list-page .setting_list-page-ul li{
+    margin-bottom: 80px;
+    list-style-type: none;
+}
+.setting_list-page-ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* .setting_list-page-ul .fas, .far{
+    
+} */
+
+.setting_list-page-ul .setting_list-page-ul-text{
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #858585;
+}
+
+.active {
+    font-size: 28px;
+    color: #858585;
+}
+
+
+.active_change .a span{
+    color: black;
+    font-weight: bold;
+}
+
+.edit_profile{
+    /* position: relative; */
+    width: 100%;
+    /* background-color: aqua; */
+    height: 100%;
+}
+
+.content{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+.edit_profile_login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.edit_profile_login__img:hover .logout{
+    visibility: visible;
+}
+
+/* form log out */
+.logout{
+    position: absolute;
+    right: 0;
+    bottom: -42px;
+    width: 100px;
+    border: 1px solid black;
+    font-size: 24px;
+    padding: 6px 30px;
+    text-decoration: none;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    visibility: hidden;
+}
+
+.logout::before{
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 161px;
+    height: 15px;
+    /* background-color: #FF7008; */
+}
+
+/* log out */
+
+
+.edit_profile_login .edit_profile-page-text1{
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+
+.edit_profile_form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 64.7%;
+    margin: auto; */
+    margin-bottom: 20px;
+}
+
+.container_form{
+    width: 100%;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.name input{
+    width: 438px;
+    height: 40px;
+}
+
+.edit_profile_form-text{
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+}
+
+.input_info2{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 30px; */
+}
+
+.name .text-input{
+    width: 91%;
+    padding: 19px;
+    font-size: 33px;
+}
+
+/* .input_info2 input{
+    
+} */
+
+.input_info2 input{
+    width: 96%;
+    height: 40px;
+    padding: 19px;
+    font-size: 20px;
+}
+
+.input_info3{
+    width: 40%;
+}
+
+.select{
+    width: 100%;
+    height: 50px;
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button .button_cancel{
+    padding: 11px 20px;
+    background-color: white;
+    border-color: #FF7008;
+    color: #FF7008;
+    font-size: 20px;
+}
+
+.button .button_save{
+    padding: 11px 20px;
+    background-color: #FF7008;
+    border-color: #FF7008;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+} 
+
+
+
+
+/* media cua index.html */
+
+@media screen and (max-width: 1500px) {
+
+    .list_img_top li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        margin-bottom: 59px;
+    }
+
+    .setting{
+        width: 20%;
+    }
+
+    .font_setting{
+        margin-left: 50px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .setting_list-page-ul .setting_list-page-ul-text{
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #858585;
+    }
+
+    .content{
+        width: 80%;
+    }
+
+    .edit_profile_login {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        position: relative;
+        margin: 20px 0px;
+    }
+
+    .edit_profile_login .edit_profile-page-text1 {
+        font-size: 35px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .edit_profile_form {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-bottom: 20px;
+    }
+
+    .name {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .edit_profile_form-text {
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+        margin-top: 20px;
+    }
+
+    .name .text-input {
+        width: 100%;
+        font-size: 26px;
+        padding: 0px;
+        text-indent: 12px;
+    }
+
+    .input_info2 input {
+        width: 100%;
+        height: 40px;
+        padding: 0px;
+        font-size: 26px;
+        text-indent: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .page_kits {
+        overflow-x: auto;
+    }
+
+    .setting{
+        display: none;
+    }
+
+    .name{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .button{
+        gap:10px;
+    }
+
+    .list_img {
+        margin-top: 20px;
+        margin-bottom: 90px;
+    }
+
+    .side_bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 10vw;
+        height: 100%;
+        background-color: rgb(245, 170, 143);
+    }
+
+    .list_img_top li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        margin-bottom: 45px;
+    }
+
+    .fname{
+        margin-bottom: 20px;
+    }
+
+    .img_phone{
+        width: 30px;
+        height: 45px;
+    }
+    .img_phone2{
+        width: 36px;
+        height: 20px;
+    }
+
+    .background_setting {
+        padding: 4px;
+        border-radius: 79%;
+        width: 24px;
+        height: 24px;
+    }
+
+    .content {
+        width: 96%;
+    }
+
+    .edit_profile_login .edit_profile-page-text1 {
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .edit_profile_login {
+        width: 17.5%;
+        margin-top: 15px;
+        margin-bottom: 2px;
+    }
+
+    .img_phone_content{
+        width: 50px;
+        height: 50px;
+    }
+
+    .name{
+        width: 20%;
+    }
+
+    .edit_profile_form-text {
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+        margin-top: 20px;
+    }
+
+    .name .text-input {
+        width: 100%;
+        font-size: 15px;
+        padding: 0px;
+        text-indent: 12px;
+    }
+
+    .input_info2 input {
+        width: 20%;
+        height: 40px;
+        padding: 0px;
+        font-size: 15px;
+        text-indent: 12px;
+    } 
+
+    .input_info3 {
+        width: 10%;
+    }
+
+    .button .button_cancel {
+        display: flex;
+        align-items: center;
+        padding: 15px 8px;
+        font-size: 15px;
+        height: 25px;
+    }
+
+    .button .button_save {
+        display: flex;
+        align-items: center;
+        padding: 14.9px;
+        font-size: 15px;
+        height: 25px;
+    }
+}

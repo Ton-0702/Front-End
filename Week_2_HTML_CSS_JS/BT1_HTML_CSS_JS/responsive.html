@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="js/main.js"> -->
+  </head>
+  <body>
+    <div class="page_kits">
+      <aside class="side_bar">
+        <div class="list_img_top">
+          <ul class="list_img">
+            <li>
+              <a 
+                ><img src="/Week_1/CSS/BT2/image/logo@01.svg" alt="ảnh kits" class="img_phone"
+              /></a>
+            </li>
+
+            <li>
+              <a
+                ><img src="/Week_1/CSS/BT2/image/house.svg" alt="ảnh kits" class="img_phone2"
+              /></a>
+            </li>
+
+            <li>
+              <a 
+                ><img src="/Week_1/CSS/BT2/image/bell.svg" alt="ảnh kits" class="img_phone2"
+              /></a>
+            </li>
+
+            <li>
+              <a 
+                ><img src="/Week_1/CSS/BT2/image/schedule.svg" alt="ảnh kits" class="img_phone2"
+              /></a>
+            </li>
+
+            <li>
+              <a
+                ><img src="/Week_1/CSS/BT2/image/stock.svg" alt="ảnh kits" class="img_phone2"
+              /></a>
+            </li>
+
+            <li>
+              <a 
+                ><img src="/Week_1/CSS/BT2/image/account.svg" alt="ảnh kits" class="img_phone2"
+              /></a>
+            </li>
+          </ul>
+
+          <ul class="list_img" onclick="setting_display_show()">
+            <li>
+              <a >
+                <img
+                  src="/Week_1/CSS/BT2/image/setting.svg"
+                  alt="ảnh kits"
+                  class="background_setting"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="list_img_top">
+          <ul class="list_img" onclick="setting_display_show()">
+            <li>
+              <a >
+                <img
+                  src="/Week_1/CSS/BT2/image/setting.svg"
+                  alt="ảnh kits"
+                  class="background_setting"
+                />
+              </a>
+            </li>
+          </ul>
+        </div> -->
+      </aside>
+
+      <div class="setting" id="front_setting" onclick="arrow_display_none()">
+        <div class="setting_back" >
+          <a >
+            <img src="/Week_1/CSS/BT2/image/muiten.svg" alt="ảnh kits"  />
+          </a>
+          <span class="font_setting">Setting</span>
+        </div>
+
+        <div class="setting_list">
+          <div class="setting_list-page" id="menu">
+            <ul class="setting_list-page-ul">
+              <li class="btn" onclick="addActive()">
+                <a href="#" class="a">
+                  <i class="fas fa-pen active" ></i>
+                  <span class="setting_list-page-ul-text active">Edit profile</span>
+                </a>
+              </li>
+
+              <li class="btn" onclick="addActive()">
+                <a href="#" class="a">
+                  <i class="fas fa-bell active" ></i>
+                  <span class="setting_list-page-ul-text active"
+                    >Notification</span
+                  >
+                </a>
+              </li>
+
+              <li class="btn" onclick="addActive()">
+                <a href="#" class="a">
+                  <i class="fas fa-lock active" ></i>
+                  <span class="setting_list-page-ul-text active"
+                    >Security</span
+                  >
+                </a>
+              </li>
+
+              <li class="btn" onclick="addActive()">
+                <a href="#" class="a">
+                  <i class="fas fa-cog active" ></i>
+        
+                  <span class="setting_list-page-ul-text active"
+                    >Appearance</span
+                  >
+                </a>
+              </li>
+
+              <li class="btn" onclick="addActive()">
+                <a href="#" class="a">
+                  <i class="far fa-question-circle active" ></i>
+                  <span class="setting_list-page-ul-text active"
+                    >Help</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="edit_profile">
+        <div class="content">
+          <header class="edit_profile_login">
+            <span class="edit_profile-page-text1">Edit profile</span>
+
+            <div class="edit_profile_login__img">
+              <img
+              src="/Week_1/CSS/BT2/image/kits_profile.svg"
+              alt="kits"
+              width="100px"
+              height="100px"
+              class="img_phone_content"
+              />
+
+              <a href ="#" class="logout" id="logout_account" onclick="logout()">
+                Log out
+              </a>
+            </div>
+
+          </header>
+
+          <form action="" class="edit_profile_form" id="form_info" novalidate>
+            <div class="container_form">
+              <div class="name">
+                <div class="fname">
+                  <div>
+                    <label for="f_name" class="edit_profile_form-text"
+                      >First Name</label
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="First name"
+                    class="text-input"
+                  />
+                </div>
+
+                <div class="lastname">
+                  <div>
+                    <label for="l_name" class="edit_profile_form-text"
+                      >Last Name</label
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    class="text-input"
+                    placeholder="Last name"
+                  />
+                </div>
+              </div>
+
+              <div class="input_info2">
+                <label for="email" class="edit_profile_form-text"
+                  >Email Name</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  
+                  placeholder="Email@gmail.com"
+                />
+
+                <label for="address" class="edit_profile_form-text"
+                  >Address</label
+                >
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Address"
+                />
+
+                <label for="number" class="edit_profile_form-text"
+                  >Contact Number</label
+                >
+                <input
+                  type="text"
+                  name="number"
+                  id="number"
+                  placeholder="091234..."
+                  class="text-input"
+                />
+
+              </div>
+
+            </div>
+          </form>
+
+          <div class="input_info3">
+            <label for="City" class="edit_profile_form-text">City</label>
+            <select name="city" id="city" class="select">
+              <option value=""></option>
+            </select>
+
+            <div class="button">
+              <button class="button_cancel" id="btn_cancle" onclick="form_cancle()">Cancel</button>
+              <button class="button_save" onclick="save_info()">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

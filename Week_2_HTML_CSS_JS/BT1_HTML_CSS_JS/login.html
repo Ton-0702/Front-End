@@ -1,0 +1,101 @@
+<!-- kminchelle/ pw: 0lelplR -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/login_style.css" />
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="section">
+                <!-- <div class="section__center">
+                    <img src="/Week_2_HTML_CSS_JS/BT1_HTML_CSS_JS/image/woman_chair_login.svg" alt="woman_chair_login">
+                </div>
+                 -->
+                <div class="section__left">
+
+                    <div class="left__login__logo">
+                        <i class="fab fa-digg" style="color: #e82c2c;"></i>
+                    </div>
+
+                    <div class="left__login__name">
+                        <span class="left__login__name-font">Log In</span>
+                    </div>
+
+                    <form action="#" class="left__login__form" >
+                        <label for="user_name" class="form__label">Username</label>
+                        <input type="text" name="u_name" id="u_name" placeholder="username">
+                        
+                        <div class="left__login__form__label">
+                            <label for="pw" class="form__label">Password</label>
+                            <label for="pw_forgot" class="form__label__next">Forgot Password?</label>
+                        </div>
+                        
+                        <div>
+                            <div class="left__login__form__label">
+                                <input type="password" name="u_pw" id="u_pw" placeholder="Password">
+                                <i class="far fa-eye-slash hidden_pw" id="hidden_pw" onclick="hidden_password()"></i>
+                                <i class="far fa-eye show_pw" id="show_pw" onclick="show_password()"></i>
+                                
+                            </div>
+
+                            <div class="errorMessage" id="errmes">
+                            
+                            </div>
+                        </div>
+
+    
+                        <button type="button" class="left__login__form__button" onclick="login()">
+                            <span class="form__span__login">LOGIN IN</span> 
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        </a>
+
+                    </form>
+
+                    <div class="left__login__link">
+                        <span class="left__login__link-text">or continue with</span>
+                        <div class="left__login__link__icon">
+                            <div class="left__login__link__icon-1">
+                                <img src="/Week_2_HTML_CSS_JS/BT1_HTML_CSS_JS/image/Google.svg" alt="google">
+                            </div>
+
+                            <div class="left__login__link__icon-2">
+                                <img src="/Week_2_HTML_CSS_JS/BT1_HTML_CSS_JS/image/Github.svg" alt="github">
+                            </div>
+
+                            <div class="left__login__link__icon-3">
+                                <img src="/Week_2_HTML_CSS_JS/BT1_HTML_CSS_JS/image/Facebook.svg" alt="github">
+                            </div>
+                        </div>
+
+                        <div class="left__login__link__guide">
+                            <span class="left__login__link__guide-text-1">Don't have an account yet?</span>
+                            <a href="#" class="left__login__link__guide-text-2">Sign up for free</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="section__right">
+                    <div class="section__right__font">
+                        <div class="section__right__img">
+                            <img src="/Week_2_HTML_CSS_JS/BT1_HTML_CSS_JS/image/cactus_login.svg" alt="plant">
+                        </div>
+                    </div>
+
+                    <div class="section__right__img__center">
+                        <img src="/Week_2_HTML_CSS_JS/BT1_HTML_CSS_JS/image/woman_chair_login.svg" alt="woman">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="js/login.js"></script>
+    </body>
+</html>
